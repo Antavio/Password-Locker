@@ -14,7 +14,7 @@ class User_Credentials:
             firstname: New user firstname
             secondname: New user secondname
             username: New user username.
-
+            email: New user email.
             password : New user password.
         '''
 
