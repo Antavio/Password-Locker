@@ -7,6 +7,12 @@ class TestUser(unittest.TestCase):
     Test class which will define test cases for the User class behaviours
     """
 
+    def tearDown(self):
+        """
+        tearDown method that cleans up after each test case has run.
+        """
+        User.users_list = []
+
     def setUp(self):
         """
         This method runs before each test case.
@@ -27,7 +33,16 @@ class TestUser(unittest.TestCase):
         Testing if the object is saved into users_list
         """
         self.new_user.saveUser()
-        self.assertEqual(len(User.users_list),1)
+        self.assertEqual(len(User.users_list), 1)
+
+    def test_save_multiple_users(self):
+        """
+        Test to see if the app can save multiple users
+        """
+        self.new_user.saveUser()
+        test_user = User("TestFirst", "TestSecond", "TestUsername", "Testpassword")
+        test_user.saveUser()
+        self.assertEqual(len(User.users_list), 2)
 
 
 if __name__ == '__main__':
