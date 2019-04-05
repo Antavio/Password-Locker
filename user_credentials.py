@@ -25,3 +25,10 @@ class User_Credentials:
         self.phone_number = phone_number
         self.email = email
         self.password = password
+
+    def saveCredentials(self):
+
+        """
+        This Method saves user objects into  users_list array
+        """
+        User_Credentials.user_credential_list.append(self)

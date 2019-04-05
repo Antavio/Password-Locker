@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a644fc98-2ed3-433e-899b-4003d6a8baec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_credentials.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_credentials_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_credentials_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state relative-caret-position="273">
+              <caret line="22" column="30" selection-start-line="20" selection-start-column="4" selection-end-line="24" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -25,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user_credentials.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="6" selection-end-column="22" />
+            <state relative-caret-position="303">
+              <caret line="33" column="58" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -34,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user_credentials_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+            <state relative-caret-position="315">
+              <caret line="30" column="48" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="48" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -46,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="19" column="43" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="22" selection-end-column="60" />
+            <state relative-caret-position="234">
+              <caret line="27" column="11" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="29" selection-end-column="48" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -65,8 +66,8 @@
       <list>
         <option value="$PROJECT_DIR$/user_test.py" />
         <option value="$PROJECT_DIR$/user.py" />
-        <option value="$PROJECT_DIR$/user_credentials.py" />
         <option value="$PROJECT_DIR$/user_credentials_test.py" />
+        <option value="$PROJECT_DIR$/user_credentials.py" />
       </list>
     </option>
   </component>
@@ -233,34 +234,34 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user_credentials.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="19" column="43" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="22" selection-end-column="60" />
+        <state relative-caret-position="234">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="29" selection-end-column="48" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="22" column="30" selection-start-line="20" selection-start-column="4" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_credentials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="33" column="58" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user_credentials_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        <state relative-caret-position="315">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="48" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
