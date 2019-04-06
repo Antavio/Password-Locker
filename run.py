@@ -39,3 +39,11 @@ def save_credential(credential):
     """
     credential.saveCredentials()
 
+def delete_credential(credential):
+    """
+    A function to delete a user
+    :param credential:
+    """
+    credential.delete_account_credentials()
+
+
