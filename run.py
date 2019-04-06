@@ -54,3 +54,18 @@ def find_credential(platform):
     """
     return User_Credentials.find_credentials_by_platform(platform)
 
+def check_existing_user(password):
+    """
+    A function to check if a user exists using the password
+    :param password:
+    :return: Boolean
+    """
+    return User.user_exists(password)
+
+def check_existing_credential(platform):
+    """
+    A function to check if a credential exists using that particular platform
+    :param platform:
+    :return: Boolean
+    """
+    return User_Credentials.credentials_exist(platform)
