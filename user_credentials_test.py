@@ -6,6 +6,12 @@ class TestCredentials(unittest.TestCase):
     """
     Test class which will define test cases for the User_Credentials class behaviours
     """
+    def tearDown(self):
+        """
+        tearDown method that cleans up after each test case has run.
+        """
+        User_Credentials.user_credential_list = []
+
     def setUp(self):
         """
         This method runs before each test case.
@@ -30,6 +36,42 @@ class TestCredentials(unittest.TestCase):
         """
         self.new_user_credential.saveCredentials()
         self.assertEqual(len(User_Credentials.user_credential_list), 1)
+
+    def test_save_multiple_credentials(self):
+        """
+        Test to see if the app can save multiple account credentials
+        """
+        self.new_user_credential.saveCredentials()
+        test_user_credentials = User_Credentials("TestPlatform", "TestFirst", "TestLast", "UserTest", "0700123654", "nm@mail.com", "pd123")
+        test_user_credentials.saveCredentials()
+        self.assertEqual(len(User_Credentials.user_credential_list), 2)
+
+
+    def test_delete_user_credentials(self):
+
+        """
+        This is to test if the app can remove account credentials from the user credentials list
+        """
+        self.new_user_credential.saveCredentials()
+        test_user_credentials = User_Credentials("TestPlatform", "TestFirst", "TestLast", "UserTest", "0700123654",
+                                                 "nm@mail.com", "pd123")
+        test_user_credentials.saveCredentials()
+
+        self.new_user_credential.delete_account_credentials()
+        self.assertEqual(len(User_Credentials.user_credential_list), 1)
+
+    def test_find_credentials_by_platform(self):
+        """
+        test to check if we can find user credentials using the respective platforms
+        """
+        self.new_user_credential.saveCredentials()
+        test_user_credentials = User_Credentials("TestPlatform", "TestFirst", "TestLast", "UserTest", "0700123654",
+                                                 "nm@mail.com", "pd123")
+        test_user_credentials.saveCredentials()
+
+        found_account = User_Credentials.find_credentials_by_platform("TestPlatform")
+
+        self.assertEqual(found_account.phone_number, test_user_credentials.phone_number)
 
 
 if __name__ == '__main__':

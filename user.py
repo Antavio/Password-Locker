@@ -23,3 +23,15 @@ class User:
         This Method saves user objects into  users_list array
         """
         User.users_list.append(self)
+
+    @classmethod
+    def user_exists(cls, password):
+        """
+        This Method checks if a user exists
+        :param password:
+        :return: boolean depending whether the user exists
+        """
+        for user in cls.users_list:
+            if user.password == password:
+                return True
+        return False

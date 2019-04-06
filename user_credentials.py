@@ -32,3 +32,18 @@ class User_Credentials:
         This Method saves user objects into  users_list array
         """
         User_Credentials.user_credential_list.append(self)
+
+    def delete_account_credentials(self):
+        """
+        This method deletes a saved account from the users_list
+        """
+        User_Credentials.user_credential_list.remove(self)
+
+    @classmethod
+    def find_credentials_by_platform(cls, platform):
+        """
+        This methods takes in an account platform & returns user credentials that matches that platform
+        """
+        for credential in cls.user_credential_list:
+            if credential.platform == platform:
+                return credential
