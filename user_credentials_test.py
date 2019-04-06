@@ -86,6 +86,12 @@ class TestCredentials(unittest.TestCase):
         credentials_exist = User_Credentials.credentials_exist("TestPlatform")
         self.assertTrue(credentials_exist)
 
+    def test_display_all_credentials(self):
+        """
+        This method returns a list of user credential accounts
+        """
+        self.assertEqual(User_Credentials.display_credentials(), User_Credentials.user_credential_list)
+
 
 if __name__ == '__main__':
     unittest.main()
