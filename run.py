@@ -46,4 +46,11 @@ def delete_credential(credential):
     """
     credential.delete_account_credentials()
 
+def find_credential(platform):
+    """
+    A function that a finds a user credential
+    :param platform:
+    :return: that specific credential
+    """
+    return User_Credentials.find_credentials_by_platform(platform)
 
