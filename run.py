@@ -2,6 +2,7 @@
 
 from user import User
 from user_credentials import User_Credentials
+import random
 
 
 def create_user(f_name, l_name, u_name, p_word):
@@ -12,7 +13,7 @@ def create_user(f_name, l_name, u_name, p_word):
     return new_user
 
 
-def create_credential(platform, f_name, s_name, u_name, p_number, email, p_word):
+def create_credential(platform, fc_name, sc_name, uc_name, pc_number, cemail, pc_word):
     """
     Function to create a credential account
     :param platform: 
@@ -24,7 +25,7 @@ def create_credential(platform, f_name, s_name, u_name, p_number, email, p_word)
     :param p_word: 
     :return: new credential object
     """
-    new_user_credential = User_Credentials(platform, f_name, s_name, u_name, p_number, email, p_word)
+    new_user_credential = User_Credentials(platform, fc_name, sc_name, uc_name, pc_number, cemail, pc_word)
     return new_user_credential
 
 
@@ -129,3 +130,87 @@ def main():
             print("*" * 15)
             p_word = input()
 
+            if check_existing_user(p_word):
+                print(f"\n Welcome back {u_name}")
+                print("You can create and save your credentials")
+                print('*'*30)
+
+                print("\n Which social media platform account do you want to create?")
+                print('*' * 30)
+                platform = input()
+
+                print("\n Enter your first name for this Account")
+                print('*' * 30)
+                fc_name = input()
+
+                print("\n Enter your second name for this Account")
+                print('*' * 30)
+                sc_name = input()
+
+                print("\n Enter Username  for this Account")
+                print('*' * 30)
+                uc_name = input()
+
+                print("\nPress  cp - to create your own password OR  gp - to automatically generate password\n")
+                print('#' * 30)
+                password_choice = input()
+
+                print("\n Enter phone number")
+                print('*' * 30)
+                pc_number = input()
+
+                print("\n Enter e-mail")
+                print('*' * 30)
+                cemail = input()
+
+                if password_choice == 'cp':
+                    print("\nEnter Password")
+                    pc_word = input()
+
+                elif password_choice == 'gp':
+                    characters = "abcdefghijklmnopqrstuvwxyz1234567890"
+                    pc_word = "".join(random.choice(characters) for _ in range(8))
+
+                    print(f"The generated Password is: {pc_word}\n")
+
+                save_credential(create_credential(platform, fc_name, sc_name, uc_name, pc_number, cemail, pc_word))
+                print(f"\n A new account for {platform} has been successfully Created")
+
+            else:
+                print("\n You Entered wrong credentials")
+                print("\n Re-Enter your username")
+                print("*" * 50)
+                print("\n Username:::")
+                print("*" * 15)
+                u_name = input()
+                print("\n Password:::")
+                print("*" * 15)
+                p_word = input()
+                if check_existing_user(p_word):
+                    print("\n Login successful")
+
+                else:
+                    print("\n Seems you have not Registered")
+
+        elif short_code == 'dc':
+            if display_credentials():
+                print("\n Your Current Account Credentials are:")
+                print("*"*50)
+
+                for cred in display_credentials():
+                    print(f"Platform {cred.platform} \n First Name: {cred.fc_name}\t Second Name: {cred.sc_name}\t Username: {cred.uc_name}\n "
+                          f"Phone Number: {cred.pc_number} \t Email: {cred.cemail}\t Password: {cred.pc_word}")
+            else:
+                print("\n No Credentials saved yet")
+
+        elif short_code == 'lo':
+            print("\n You have logged out")
+            print("*"*40)
+            break
+
+        else:
+            print("\n Seems you entered a wrong short code")
+
+
+if __name__ == '__main__':
+    main()
