@@ -10,7 +10,7 @@ def create_user(f_name, l_name, u_name, p_word):
     new_user = User(f_name, l_name, u_name, p_word)
     return new_user
 
-def create_credential(platform, f_name, s_name, u_name, p_number, email, p_word)
+def create_credential(platform, f_name, s_name, u_name, p_number, email, p_word):
     """
     Function to create a credential account
     :param platform: 
@@ -24,3 +24,18 @@ def create_credential(platform, f_name, s_name, u_name, p_number, email, p_word)
     """
     new_user_credential = User_Credentials(platform, f_name, s_name, u_name, p_number, email, p_word)
     return  new_user_credential
+
+def save_user(user):
+    """
+    Function to save a user
+    :param user:
+    """
+    user.saveUser()
+
+def save_credential(credential):
+    """
+    Function to save a credential
+    :param credential
+    """
+    credential.saveCredentials()
+
