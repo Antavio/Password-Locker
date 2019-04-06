@@ -47,3 +47,15 @@ class User_Credentials:
         for credential in cls.user_credential_list:
             if credential.platform == platform:
                 return credential
+
+    @classmethod
+    def credentials_exist(cls,platform):
+        """
+        This Method checks if a Social media account exists
+        :param platform:
+        :return: boolean depending whether the credentials exists
+        """
+        for credential in cls.user_credential_list:
+            if credential.platform ==platform:
+                return True
+        return False
