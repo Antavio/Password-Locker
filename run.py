@@ -25,7 +25,7 @@ def create_credential(platform, f_name, s_name, u_name, p_number, email, p_word)
     :return: new credential object
     """
     new_user_credential = User_Credentials(platform, f_name, s_name, u_name, p_number, email, p_word)
-    return  new_user_credential
+    return new_user_credential
 
 
 def save_user(user):
@@ -60,6 +60,7 @@ def find_credential(platform):
     """
     return User_Credentials.find_credentials_by_platform(platform)
 
+
 def check_existing_user(password):
     """
     A function to check if a user exists using the password
@@ -84,3 +85,47 @@ def display_credentials():
     :return: All saved credentials
     """
     return User_Credentials.display_credentials()
+
+
+def main():
+    print("Welcome to the Password Locker Application\n")
+    print("What is your name\n")
+    account_name = input()
+
+    print(f"Hello {account_name}. Please use the following short code menu to continue \n")
+
+    while True:
+        print("Menu: rg - Create Account, cc - create credentials, cp - create password, gp - generate password, "
+              "dc - Display Credentials, lo - Logout")
+        short_code = input().lower()
+
+        if short_code == 'rg':
+            print("New User Account")
+            print('*'*20)
+
+            print("Enter First Name")
+            f_name = input()
+
+            print("Enter Second Name")
+            l_name = input()
+
+            print("Enter your Username")
+            u_name = input()
+
+            print("Enter Password")
+            p_word = input()
+
+            save_user(create_user(f_name, l_name, u_name, p_word))
+
+            print(f"\n A new account for {f_name} {l_name} has been created successfully \n")
+
+        elif short_code == 'cc':
+            print("\n Please Login into  your Account")
+            print("*" * 50)
+            print("\n Username:::")
+            print("*" * 15)
+            u_name = input()
+            print("\n Password:::")
+            print("*" * 15)
+            p_word = input()
+
