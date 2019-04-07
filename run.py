@@ -135,7 +135,7 @@ def main():
                 print("You can now create and save your credentials")
                 print('*'*100)
 
-                print("\n Which social media platform account do you want to create?")
+                print("\n Which Platform account do you want to create?")
                 print('*' * 100)
                 platform = input()
 

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a644fc98-2ed3-433e-899b-4003d6a8baec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user_credentials.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-390">
+            <state relative-caret-position="-705">
               <caret line="7" column="95" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="95" />
             </state>
           </provider>
@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-894">
-              <caret line="139" column="34" selection-start-line="139" selection-start-column="34" selection-end-line="139" selection-end-column="34" />
+            <state relative-caret-position="-969">
+              <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
               <folding>
                 <element signature="e#26#47#0" expanded="true" />
               </folding>
@@ -71,8 +71,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="207">
-                <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+              <first_editor relative-caret-position="251">
+                <caret line="39" selection-start-line="39" selection-end-line="39" />
               </first_editor>
               <second_editor />
             </state>
@@ -106,8 +106,8 @@
         <option value="$PROJECT_DIR$/user.py" />
         <option value="$PROJECT_DIR$/user_credentials_test.py" />
         <option value="$PROJECT_DIR$/user_credentials.py" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -122,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="9" />
     <option name="width" value="1336" />
     <option name="height" value="467" />
@@ -255,13 +255,13 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="9" width="1336" height="467" extended-state="0" />
+    <frame x="0" y="-1" width="1366" height="728" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25171104" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24609666" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.0867052" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.38220757" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.7397035" />
       <window_info anchor="bottom" id="Message" order="3" />
@@ -324,23 +324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_credentials.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <caret line="7" column="95" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-894">
-          <caret line="139" column="34" selection-start-line="139" selection-start-column="34" selection-end-line="139" selection-end-column="34" />
-          <folding>
-            <element signature="e#26#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -348,11 +331,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user_credentials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-705">
+          <caret line="7" column="95" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
+          <folding>
+            <element signature="e#26#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="207">
-            <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <first_editor relative-caret-position="251">
+            <caret line="39" selection-start-line="39" selection-end-line="39" />
           </first_editor>
           <second_editor />
         </state>
