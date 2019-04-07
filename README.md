@@ -1,17 +1,21 @@
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+# Password-Locker Application
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## Author
+[Anthony Njuguna Kiarie](https://github.com/Antavio)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## Project Description
+This is a Python project that helps a user score their different account credentials which may include Facebook, Instagram, Twitter, Google+ etc.
+In addition the user has the option of putting in a password for the new credential or have one generated for them. Finally a user can be able 
+to view all their credentials in one place.
+
+### Project Setup instructions
+Use the following commands to use this project.
+- install python 3
+- git clone
+- cd 
+- atom .  //For those using atom text editor.
+- code .  //For those using Visual Studio editor.
+
+To run this project in your local machine 
+1. Give executable rights to the run.py file by running `chmod +x run.py` on the terminal
+2. Run `./run.py` to start interacting with the program.
