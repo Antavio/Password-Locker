@@ -88,6 +88,13 @@ def display_credentials():
     return User_Credentials.display_credentials()
 
 
+def delete_account_credentials(del_credential):
+    """
+    A function to delete a specific user credential
+    """
+    del_credential.delete_account_credentials()
+
+
 def main():
     print("Welcome to the Password Locker Application\n")
     print("What is your name\n")
@@ -97,7 +104,7 @@ def main():
 
     while True:
         print("Menu: rg - Create Account, cc - create credentials, cp - create password, gp - generate password, "
-              "dc - Display Credentials, del - Delete Credential lo - Logout")
+              "dc - Display Credentials, del - Delete Credential, lo - Logout")
         short_code = input().lower()
 
         if short_code == 'rg':
