@@ -25,7 +25,7 @@ The different technologies that were used to develop this program include:
 1. Python 3.6
 
 ### Project's BDD
-| Behaviour | Expected Output |
+| Behaviour/Input | Expected Output |
 |-----------|-----------------|
 | When the user first interacts with the application User is prompted to enter their name| Welcome message including name of the user|
 |User is provided with a menu| User should choose the action they prefer from the Menu|
