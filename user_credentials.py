@@ -49,7 +49,7 @@ class User_Credentials:
                 return credential
 
     @classmethod
-    def credentials_exist(cls,platform):
+    def credentials_exist(cls, platform):
         """
         This Method checks if a Social media account exists
         :param platform:

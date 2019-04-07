@@ -13,19 +13,19 @@ def create_user(f_name, l_name, u_name, p_word):
     return new_user
 
 
-def create_credential(platform, fc_name, sc_name, uc_name, pc_number, cemail, pc_word):
+def create_credential(platform, fc_name, sc_name, uc_name, pc_number, email, pc_word):
     """
     Function to create a credential account
     :param platform: 
-    :param f_name: 
-    :param s_name: 
-    :param u_name: 
-    :param p_number: 
-    :param email: 
-    :param p_word: 
+    :param fc_name:
+    :param sc_name:
+    :param uc_name:
+    :param pc_number:
+    :param email:
+    :param pc_word:
     :return: new credential object
     """
-    new_user_credential = User_Credentials(platform, fc_name, sc_name, uc_name, pc_number, cemail, pc_word)
+    new_user_credential = User_Credentials(platform, fc_name, sc_name, uc_name, pc_number, email, pc_word)
     return new_user_credential
 
 
@@ -93,7 +93,7 @@ def main():
     print("What is your name\n")
     account_name = input()
 
-    print(f"Hello {account_name}. Please use the following short code menu to continue \n")
+    print(f"Hello {account_name}. \n Please use the following short code menu to continue \n")
 
     while True:
         print("Menu: rg - Create Account, cc - create credentials, cp - create password, gp - generate password, "
@@ -132,7 +132,7 @@ def main():
 
             if check_existing_user(p_word):
                 print(f"\n Welcome back {u_name}")
-                print("You can create and save your credentials")
+                print("You can now create and save your credentials")
                 print('*'*30)
 
                 print("\n Which social media platform account do you want to create?")
@@ -155,25 +155,26 @@ def main():
                 print('#' * 30)
                 password_choice = input()
 
+                if password_choice == 'cp':
+                    print("\nEnter Password")
+                    pc_word = input()
+
+                elif password_choice == 'gp':
+                    characters = "AbcdefghijKLmnopqrstuvWXYZ0123456789"
+                    pc_word = "".join(random.choice(characters) for _ in range(8))
+                    print(f"The generated Password is: {pc_word}\n")
+
                 print("\n Enter phone number")
                 print('*' * 30)
                 pc_number = input()
 
                 print("\n Enter e-mail")
                 print('*' * 30)
-                cemail = input()
+                email = input()
 
-                if password_choice == 'cp':
-                    print("\nEnter Password")
-                    pc_word = input()
 
-                elif password_choice == 'gp':
-                    characters = "abcdefghijklmnopqrstuvwxyz1234567890"
-                    pc_word = "".join(random.choice(characters) for _ in range(8))
 
-                    print(f"The generated Password is: {pc_word}\n")
-
-                save_credential(create_credential(platform, fc_name, sc_name, uc_name, pc_number, cemail, pc_word))
+                save_credential(create_credential(platform, fc_name, sc_name, uc_name, pc_number, email, pc_word))
                 print(f"\n A new account for {platform} has been successfully Created")
 
             else:
@@ -198,8 +199,8 @@ def main():
                 print("*"*50)
 
                 for cred in display_credentials():
-                    print(f"Platform {cred.platform} \n First Name: {cred.fc_name}\t Second Name: {cred.sc_name}\t Username: {cred.uc_name}\n "
-                          f"Phone Number: {cred.pc_number} \t Email: {cred.cemail}\t Password: {cred.pc_word}")
+                    print(f"Platform {cred.platform} \n First Name: {cred.firstname} \t Second Name: {cred.secondname} \tUsername: {cred.username}"
+                          f"\t Phone number: {cred.phone_number}\t Email: {cred.email} \t Password: {cred.password}")
             else:
                 print("\n No Credentials saved yet")
 
