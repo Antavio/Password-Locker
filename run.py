@@ -97,12 +97,12 @@ def main():
 
     while True:
         print("Menu: rg - Create Account, cc - create credentials, cp - create password, gp - generate password, "
-              "dc - Display Credentials, lo - Logout")
+              "dc - Display Credentials, del - Delete Credential lo - Logout")
         short_code = input().lower()
 
         if short_code == 'rg':
             print("New User Account")
-            print('*'*20)
+            print('*'*100)
 
             print("Enter First Name")
             f_name = input()
@@ -122,37 +122,37 @@ def main():
 
         elif short_code == 'cc':
             print("\n Please Login into  your Account")
-            print("*" * 50)
+            print("*" * 100)
             print("\n Username:::")
-            print("*" * 15)
+            print("*" * 100)
             u_name = input()
             print("\n Password:::")
-            print("*" * 15)
+            print("*" * 100)
             p_word = input()
 
             if check_existing_user(p_word):
                 print(f"\n Welcome back {u_name}")
                 print("You can now create and save your credentials")
-                print('*'*30)
+                print('*'*100)
 
                 print("\n Which social media platform account do you want to create?")
-                print('*' * 30)
+                print('*' * 100)
                 platform = input()
 
                 print("\n Enter your first name for this Account")
-                print('*' * 30)
+                print('*' * 100)
                 fc_name = input()
 
                 print("\n Enter your second name for this Account")
-                print('*' * 30)
+                print('*' * 100)
                 sc_name = input()
 
                 print("\n Enter Username  for this Account")
-                print('*' * 30)
+                print('*' * 100)
                 uc_name = input()
 
                 print("\nPress  cp - to create your own password OR  gp - to automatically generate password\n")
-                print('#' * 30)
+                print('#' * 100)
                 password_choice = input()
 
                 if password_choice == 'cp':
@@ -165,14 +165,12 @@ def main():
                     print(f"The generated Password is: {pc_word}\n")
 
                 print("\n Enter phone number")
-                print('*' * 30)
+                print('*' * 100)
                 pc_number = input()
 
                 print("\n Enter e-mail")
-                print('*' * 30)
+                print('*' * 100)
                 email = input()
-
-
 
                 save_credential(create_credential(platform, fc_name, sc_name, uc_name, pc_number, email, pc_word))
                 print(f"\n A new account for {platform} has been successfully Created")
@@ -180,15 +178,15 @@ def main():
             else:
                 print("\n You Entered wrong credentials")
                 print("\n Re-Enter your username")
-                print("*" * 50)
+                print("*" * 100)
                 print("\n Username:::")
-                print("*" * 15)
+                print("*" * 100)
                 u_name = input()
                 print("\n Password:::")
-                print("*" * 15)
+                print("*" * 100)
                 p_word = input()
                 if check_existing_user(p_word):
-                    print("\n Login successful")
+                    print(f"\n Login successful for {u_name}")
 
                 else:
                     print("\n Seems you have not Registered")
@@ -196,17 +194,19 @@ def main():
         elif short_code == 'dc':
             if display_credentials():
                 print("\n Your Current Account Credentials are:")
-                print("*"*50)
+                print("*"*100)
 
                 for cred in display_credentials():
-                    print(f"Platform {cred.platform} \n First Name: {cred.firstname} \t Second Name: {cred.secondname} \tUsername: {cred.username}"
+                    print(f"Platform {cred.platform} \n First Name: {cred.firstname} \t Second Name: {cred.secondname} \t Username: {cred.username}"
                           f"\t Phone number: {cred.phone_number}\t Email: {cred.email} \t Password: {cred.password}")
             else:
                 print("\n No Credentials saved yet")
 
+        # elif short_code == 'del':
+
         elif short_code == 'lo':
             print("\n You have logged out")
-            print("*"*40)
+            print("*"*100)
             break
 
         else:
